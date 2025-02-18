@@ -5,14 +5,14 @@ export const Lottery = () => {
         className="mx-auto max-w-7xl px-6 lg:px-8"
         style={{ display: "flex", flexDirection: "column", gap: "50px" }}
       >
-        <div className="text-center flex flex-col gap-17">
-          <h2 className="text-7xl font-bold tracking-tight text-white sm:text-5xl">
-            Sorteo Garantizado con Raffle
+        <div className="text-center flex flex-col gap-5">
+          <h2 className="text-xl font-bold tracking-tight text-white sm:text-5xl">
+            🎉Sorteo Garantizado con Raffle🎉
           </h2>
-          <p className="mt-2 text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-balance">
+          <p className="mt-2 text-xl font-semibold tracking-tight text-pretty text-white sm:text-4xl lg:text-balance">
             ¡Todos los números vendidos tienen su oportunidad!
           </p>
-          <p className="mt-6 text-lg/8 text-gray-600">
+          <p className="mt-6 text-lg/8 text-white">
             El sistema Raffle implementa un método innovador de sorteos que
             garantiza la existencia de un ganador en cada evento. Este proceso
             transparente combina tecnología moderna con un diseño inteligente
@@ -21,10 +21,10 @@ export const Lottery = () => {
         </div>
         <div className="flex" style={{ gap: "20px" }}>
           <div className=" border-gray-200 pt-4">
-            <dt className="font-medium text-white">
+            <dt className="font-medium text-white text-center text-2xl">
               Sistema de Venta Inteligente
             </dt>
-            <dd className="mt-2 text-sm text-gray-600">
+            <dd className="mt-2 text-sm text-white text-center">
               Los tickets se venden hasta alcanzar el límite máximo disponible
               (por ejemplo, 100 números) Solo los números vendidos participan en
               el sorteo En nuestro ejemplo, si se vendieron 40 números, estos
@@ -32,10 +32,10 @@ export const Lottery = () => {
             </dd>
           </div>
           <div className=" border-gray-200 pt-4">
-            <dt className="font-medium text-white">
+            <dt className="font-bold text-white text-center text-2xl">
               Período de Espera Controlado
             </dt>
-            <dd className="mt-2 text-sm text-gray-600">
+            <dd className="mt-2 text-sm text-white text-center">
               Una vez iniciada la venta de tickets, el sistema activa
               automáticamente un contador regresivo Este contador comienza a
               mostrar el tiempo restante 24 horas antes del sorteo Durante este
@@ -44,8 +44,10 @@ export const Lottery = () => {
             </dd>
           </div>
           <div className=" border-gray-200 pt-4">
-            <dt className="font-medium text-white">Garantía de Ganador</dt>
-            <dd className="mt-2 text-sm text-gray-600">
+            <dt className="font-medium text-white text-center text-2xl">
+              Garantía de Ganador
+            </dt>
+            <dd className="mt-2 text-sm text-white text-center">
               La selección aleatoria se realiza únicamente entre los números
               vendidos Como solo participan números comprados, siempre habrá un
               ganador válido Por ejemplo, si se vendieron 40 números, el sistema

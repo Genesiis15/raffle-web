@@ -1,42 +1,53 @@
-import angelina from '../src/assets/angelina.jpeg'
-import gabriel from '../src/assets/gabriel.jpg'
-import nikole from '../src/assets/nikole.jpg'
-import jesus from '../src/assets/jesus.jpg'
-import iris from '../src/assets/iris.jpg'
+import angelina from "../src/assets/angelina.jpeg";
+import gabriel from "../src/assets/gabriel.jpg";
+import nikole from "../src/assets/nikole.jpg";
+import jesus from "../src/assets/jesus.jpg";
+import iris from "../src/assets/iris.jpg";
 
-export const Comments =()=>{
-    return <>
-
-      <h1 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl sm:text-4xl">Comentarios Raffle</h1>
-       <div style={{display:'flex', justifyContent:'space-between', gap:'20px', alignItems:'center'}}>
-       <div
+export const Comments = () => {
+  return (
+    <>
+      <h1 className="text-3xl font-bold w-[100%] tracking-tight text-primary sm:text-4xl sm:text-4xl">
+        Comentarios sobre Raffle
+      </h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          gap: "20px",
+          alignItems: "center",
+        }}
+      >
+        <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
-          className="bg-white py-24 sm:py-32"
+          className="bg-primary py-24 sm:py-32"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <div className="relative mt-8 flex items-center gap-x-4">
                 <img
-                src={gabriel}
+                  src={gabriel}
                   alt=""
-                  className="size-16 rounded-full bg-gray-50"
+                  className="size-16 object-cover rounded-full bg-gray-50"
                 />
-                <div className="text-sm/6">
-                  <p className="font-semibold text-gray-900">
+                <div className="text-sm/6 ">
+                  <p className="font-semibold text-white">
                     <a href="#">
-                      <span className="absolute inset-0"></span>
+                      <span className="absolute inset-0 "></span>
                       Gabriel Rincon
                     </a>
                   </p>
-                  <p className="text-gray-600">@gabriel_arm1</p>
+                  <p className="text-white">@gabriel_arm1</p>
                 </div>
               </div>
             </div>
-            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
+            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-               
-                  <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+                  <p
+                    className="mt-5 line-clamp-3 text-sm/6 text-white"
+                    style={{ marginTop: 10 }}
+                  >
                     ¡Absolutamente increíble! El sistema de raffles online es
                     super intuitivo y profesional. Me encanta cómo se realizan
                     los sorteos en vivo y la transparencia en todo el proceso.
@@ -49,32 +60,38 @@ export const Comments =()=>{
         </div>
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
-          className="bg-white py-24 sm:py-32"
+          className="bg-primary py-24 sm:py-32"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <div className="relative mt-8 flex items-center gap-x-4">
                 <img
-src={angelina}                  alt=""
-                  className="size-16 rounded-full bg-gray-50"
+                  src={angelina}
+                  alt=""
+                  className="size-16 object-cover rounded-full bg-gray-50"
                 />
                 <div className="text-sm/6">
-                  <p className="font-semibold text-gray-900">
+                  <p className="font-semibold text-white">
                     <a href="#">
                       <span className="absolute inset-0"></span>
                       Agelina Arraez
                     </a>
                   </p>
-                  <p className="text-gray-600">@ange21</p>
+                  <p className="text-white">@ange21</p>
                 </div>
               </div>
             </div>
-            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
+            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                 
-                  <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                  ¡Experiencia excepcional! La plataforma de raffles demuestra un nivel de excelencia impresionante. Los sorteos en directo son emocionantes y la claridad del proceso es impecable. ¡Muy recomendado!
+                  <p
+                    className="mt-5 line-clamp-3 text-sm/6 text-white"
+                    style={{ marginTop: 10 }}
+                  >
+                    ¡Experiencia excepcional! La plataforma de raffles demuestra
+                    un nivel de excelencia impresionante. Los sorteos en directo
+                    son emocionantes y la claridad del proceso es impecable.
+                    ¡Muy recomendado!
                   </p>
                 </div>
               </article>
@@ -83,7 +100,7 @@ src={angelina}                  alt=""
         </div>
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
-          className="bg-white py-24 sm:py-32"
+          className="bg-primary py-24 sm:py-32"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
@@ -91,37 +108,48 @@ src={angelina}                  alt=""
                 <img
                   src={iris}
                   alt=""
-                  className="size-16 rounded-full bg-gray-50"
+                  className="size-16 object-cover rounded-full bg-gray-50"
                 />
                 <div className="text-sm/6">
-                  <p className="font-semibold text-gray-900">
+                  <p className="font-semibold text-white">
                     <a href="#">
                       <span className="absolute inset-0"></span>
                       Iris Diaz
                     </a>
                   </p>
-                  <p className="text-gray-600">@irianpamor</p>
+                  <p className="text-white">@irianpamor</p>
                 </div>
               </div>
             </div>
-            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
+            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  
-                  <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                  ¡Sorprendentemente efectivo! He participado en varios sorteos y la organización ha sido perfecta. La transparencia total y los sorteos en vivo hacen que sea una experiencia única. ¡Sin duda lo mejor!
+                  <p
+                    className="mt-5 line-clamp-3 text-sm/6 text-white"
+                    style={{ marginTop: 10 }}
+                  >
+                    ¡Sorprendentemente efectivo! He participado en varios
+                    sorteos y la organización ha sido perfecta. La transparencia
+                    total y los sorteos en vivo hacen que sea una experiencia
+                    única. ¡Sin duda lo mejor!
                   </p>
                 </div>
               </article>
             </div>
-            
           </div>
         </div>
-       </div>
-       <div style={{display:'flex', justifyContent:'space-between', gap:'20px', alignItems:'center'}}>
-       <div
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          gap: "20px",
+          alignItems: "center",
+        }}
+      >
+        <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
-          className="bg-white py-24 sm:py-32"
+          className="bg-primary py-24 sm:py-32"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
@@ -129,25 +157,30 @@ src={angelina}                  alt=""
                 <img
                   src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
-                  className="size-16 rounded-full bg-gray-50"
+                  className="size-16 object-cover rounded-full bg-gray-50"
                 />
                 <div className="text-sm/6">
-                  <p className="font-semibold text-gray-900">
+                  <p className="font-semibold text-white">
                     <a href="#">
                       <span className="absolute inset-0"></span>
                       Hernan Rojas
                     </a>
                   </p>
-                  <p className="text-gray-600">@caciquev55</p>
+                  <p className="text-white">@caciquev55</p>
                 </div>
               </div>
             </div>
-            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
+            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                 
-                  <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                  ¡Una maravilla! La interfaz es muy amigable y los sorteos en tiempo real son increíbles. Todo está muy bien estructurado y puedes seguir cada paso del proceso. ¡Totalmente satisfactorio!
+                  <p
+                    className="mt-5 line-clamp-3 text-sm/6 text-white"
+                    style={{ marginTop: 10 }}
+                  >
+                    ¡Una maravilla! La interfaz es muy amigable y los sorteos en
+                    tiempo real son increíbles. Todo está muy bien estructurado
+                    y puedes seguir cada paso del proceso. ¡Totalmente
+                    satisfactorio!
                   </p>
                 </div>
               </article>
@@ -156,32 +189,38 @@ src={angelina}                  alt=""
         </div>
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
-          className="bg-white py-24 sm:py-32"
+          className="bg-primary py-24 sm:py-32"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <div className="relative mt-8 flex items-center gap-x-4">
                 <img
-src={jesus}                  alt=""
-                  className="size-16 rounded-full bg-gray-50"
+                  src={jesus}
+                  alt=""
+                  className="size-16 object-cover rounded-full bg-gray-50"
                 />
                 <div className="text-sm/6">
-                  <p className="font-semibold text-gray-900">
+                  <p className="font-semibold text-white">
                     <a href="#">
                       <span className="absolute inset-0"></span>
                       Jesus Vasquez
                     </a>
                   </p>
-                  <p className="text-gray-600">@autoservicio_castillo_</p>
+                  <p className="text-white">@autoservicio_castillo_</p>
                 </div>
               </div>
             </div>
-            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
+            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                 
-                  <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                  ¡Impresionante calidad! La profesionalidad con la que manejan los sorteos es admirable. Los sorteos en vivo son emocionantes y puedes ver absolutamente todo lo que sucede. ¡Altamente recomendable!
+                  <p
+                    className="mt-5 line-clamp-3 text-sm/6 text-white"
+                    style={{ marginTop: 10 }}
+                  >
+                    ¡Impresionante calidad! La profesionalidad con la que
+                    manejan los sorteos es admirable. Los sorteos en vivo son
+                    emocionantes y puedes ver absolutamente todo lo que sucede.
+                    ¡Altamente recomendable!
                   </p>
                 </div>
               </article>
@@ -190,41 +229,46 @@ src={jesus}                  alt=""
         </div>
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
-          className="bg-white py-24 sm:py-32"
+          className="bg-primary py-24 sm:py-32"
         >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <div className="relative mt-8 flex items-center gap-x-4">
                 <img
-src={nikole}         
-          alt=""
-                  className="size-16 rounded-full bg-gray-50"
+                  src={nikole}
+                  alt=""
+                  className="size-16 object-cover rounded-full bg-gray-50"
                 />
                 <div className="text-sm/6">
-                  <p className="font-semibold text-gray-900">
+                  <p className="font-semibold text-white">
                     <a href="#">
                       <span className="absolute inset-0"></span>
                       Nikole Moncada
                     </a>
                   </p>
-                  <p className="text-gray-600">@nikolemonc</p>
+                  <p className="text-white">@nikolemonc</p>
                 </div>
               </div>
             </div>
-            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
+            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  
-                  <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                  ¡Verdaderamente innovador! La combinación de tecnología moderna con procesos transparentes hace que esta plataforma destaque por encima del resto. Los sorteos en directo son fascinantes y el seguimiento es perfecto. ¡La mejor opción sin duda!
+                  <p
+                    className="mt-5 line-clamp-3 text-sm/6 text-white"
+                    style={{ marginTop: 10 }}
+                  >
+                    ¡Verdaderamente innovador! La combinación de tecnología
+                    moderna con procesos transparentes hace que esta plataforma
+                    destaque por encima del resto. Los sorteos en directo son
+                    fascinantes y el seguimiento es perfecto. ¡La mejor opción
+                    sin duda!
                   </p>
                 </div>
               </article>
             </div>
-            
           </div>
         </div>
-       </div>
-      
+      </div>
     </>
-}
+  );
+};

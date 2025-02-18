@@ -1,11 +1,10 @@
-import people from "../src/assets/people.png";
-
+import people2 from '../src/assets/aboutimage1.jpg'
 export const AboutSection = () => {
   return (
     <>
-      <h1 className="text-white text-7xl font-bold ">Quien es Raffle...</h1>
+      <h1 className="text-white text-5xl font-bold w-[100%]">Quien es Raffle...</h1>
       <div style={{ padding: "70px" }}>
-        <img src={people} />
+        <img src={people2} />
       </div>
 
       <p className="text-white text-center">

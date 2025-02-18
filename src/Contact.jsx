@@ -3,7 +3,7 @@ export const Contact = () => {
     <div >
 
       <div style={{marginBottom:'50px'}}>
-      <h2 className="text-7xl font-semibold text-primary">Contacto</h2>
+      <h2 className="text-5xl font-semibold text-primary">Contactanos</h2>
       </div>
 
       <form>
