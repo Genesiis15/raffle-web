@@ -1,4 +1,4 @@
-import people2 from '../src/assets/aboutimage1.jpg'
+import people2 from '../src/assets/aboutImage1.jpg'
 export const AboutSection = () => {
   return (
     <>
