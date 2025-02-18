@@ -1,3 +1,7 @@
+import { Instagram } from 'lucide-react';
+import { Facebook } from 'lucide-react';
+import { Twitter } from 'lucide-react';
+
 export const NetworkIcons =()=>{
 return <>
       {/* Contenedor de redes sociales */}
@@ -15,9 +19,9 @@ return <>
     >
       {/* Iconos de redes sociales */}
       <a
-        href="https://twitter.com/tu-usuario"
+        href="https://www.instagram.com/raffle.ve/"
         style={{
-          color: "#1DA1F2",
+          color: "#FF7835",
           fontSize: "24px",
           padding: "10px",
           borderRadius: "50%",
@@ -36,13 +40,13 @@ return <>
           },
         }}
       >
-        <i className="fab fa-twitter" />
+        <Instagram />
       </a>
   
       <a
         href="https://facebook.com/tu-usuario"
         style={{
-          color: "#1877F2",
+          color: "#FF7835",
           fontSize: "24px",
           padding: "10px",
           borderRadius: "50%",
@@ -61,13 +65,13 @@ return <>
           },
         }}
       >
-        <i className="fab fa-facebook" />
+        <Facebook />
       </a>
   
       <a
         href="https://instagram.com/tu-usuario"
         style={{
-          color: "#E4405F",
+          color: "#FF7835",
           fontSize: "24px",
           padding: "10px",
           borderRadius: "50%",
@@ -86,7 +90,7 @@ return <>
           },
         }}
       >
-        <i className="fab fa-instagram" />
+         <Twitter />
       </a>
     </div>
 </>

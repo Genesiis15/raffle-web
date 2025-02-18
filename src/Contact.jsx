@@ -1,7 +1,10 @@
 export const Contact = () => {
   return (
-    <>
-      <h2 className="text-7xl font-semibold text-secondary">Contacto</h2>
+    <div >
+
+      <div style={{marginBottom:'50px'}}>
+      <h2 className="text-7xl font-semibold text-primary">Contacto</h2>
+      </div>
 
       <form>
         <div className="space-y-12">
@@ -10,7 +13,7 @@ export const Contact = () => {
 
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
               <div className="sm:col-span-4">
-                <label className="block text-sm/6 font-medium text-secondary">
+                <label className="block text-sm/6 font-medium text-primary">
                   Nombre
                 </label>
                 <div className="mt-2">
@@ -27,7 +30,7 @@ export const Contact = () => {
                 </div>
               </div>
               <div className="sm:col-span-4">
-                <label className="block text-sm/6 font-medium text-secondary">
+                <label className="block text-sm/6 font-medium text-primary">
                   Correo
                 </label>
                 <div className="mt-2">
@@ -45,7 +48,7 @@ export const Contact = () => {
               </div>
 
               <div className="col-span-full">
-                <label className="block text-sm/6 font-medium text-secondary">
+                <label className="block text-sm/6 font-medium text-primary">
                   Mensaje
                 </label>
                 <div className="mt-2">
@@ -74,6 +77,6 @@ export const Contact = () => {
       </form>
 
      
-    </>
+    </div>
   );
 };

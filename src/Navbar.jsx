@@ -31,25 +31,25 @@ export const Navbar =()=>{
          <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
            <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
              <a
-               href="#"
+               href="#AboutSection"
                className="hover:text-primary transition-colors duration-200"
              >
                Sobre nosotros <span aria-hidden="true">&rarr;</span>
              </a>
              <a
-               href="#"
+               href="#Services"
                className="hover:text-primary transition-colors duration-200"
              >
                Servicios <span aria-hidden="true">&rarr;</span>
              </a>
              <a
-               href="#"
+               href="#TeamRaffle"
                className="hover:text-primary transition-colors duration-200"
              >
                Equipo <span aria-hidden="true">&rarr;</span>
              </a>
              <a
-               href="#"
+               href="#Contact"
                className="hover:text-primary transition-colors duration-200"
              >
                Contacto <span aria-hidden="true">&rarr;</span>
