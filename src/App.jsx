@@ -8,6 +8,8 @@ import { Lottery } from "./Lottery";
 import { TeamRaffle } from "./TeamRaffle";
 import { Contact } from "./Contact";
 import fondo from "./assets/fondoRaffle.jpg";
+import img from "./assets/2.png";
+
 import { Comments } from "./Comments";
 
 function App() {
@@ -110,7 +112,7 @@ function App() {
           <div
             className="hidden md:block"
             style={{
-              backgroundImage: "url('../src/assets/2.png')",
+              backgroundImage: `url(${img})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               width: "100%",
