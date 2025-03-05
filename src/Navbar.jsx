@@ -1,83 +1,97 @@
 import raffleLogo from "../src/assets/raffleLogo.png";
-import logo from '../src/assets/logo.png'
-export const Navbar =()=>{
-    return <div>
-            <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 rounded-lg" style={{minHeight: "80vh"}}>
-       <img
-         src={logo}
-         alt="Fondo de la sección de trabajo"
-         className="absolute inset-0 -z-10 w-full h-full object-cover object-right  rounded-lg"
-       />
-       {/* Contenido principal */}
-       <div className="mx-auto  px-6 lg:px-8">
-        <div style={{display:'flex', justifyContent:'space-between', padding:'20px'}}>
-        <div className="mx-auto max-w-2xl lg:mx-0 ">
-           <img
-                                   alt="Your Company"
-                                   src={raffleLogo}
-                                   className="h-8 w-auto "
-                                 />
-         </div>
-         {/* Enlaces de navegación */}
-         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none rounded-lg">
-           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-             <a
-               href="#AboutSection"
-               className="hover:text-primary transition-colors duration-200"
-             >
-               Sobre nosotros <span aria-hidden="true">&rarr;</span>
-             </a>
-             <a
-               href="#Services"
-               className="hover:text-primary transition-colors duration-200"
-             >
-               Servicios <span aria-hidden="true">&rarr;</span>
-             </a>
-             <a
-               href="#comentarios"
-               className="hover:text-primary transition-colors duration-200"
-             >
-               Comentarios <span aria-hidden="true">&rarr;</span>
-             </a>
-             <a
-               href="#teamraffle"
-               className="hover:text-primary transition-colors duration-200"
-             >
-               Equipo <span aria-hidden="true">&rarr;</span>
-             </a>
-             <a
-               href="#Contact"
-               className="hover:text-primary transition-colors duration-200"
-             >
-               Contacto <span aria-hidden="true">&rarr;</span>
-             </a>
-           </div>
+import logo from '../src/assets/logo.png';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div>
+      <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 rounded-lg" style={{ minHeight: "80vh" }}>
+        <img
+          src={logo}
+          alt="Fondo de la sección de trabajo"
+          className="absolute inset-0 -z-10 w-full h-full object-cover object-right rounded-lg"
+        />
+
+        <div className="mx-auto px-6 lg:px-8">
+          <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
+            <div className="mx-auto max-w-2xl lg:mx-0">
+              <img alt="Your Company" src={raffleLogo} className="h-10 w-auto" />
+            </div>
+
+         
+            <button
+              onClick={handleMenuClick}
+              className="flex items-center justify-center px-4 py-3  text-white rounded-lg cursor-pointer "
+              aria-expanded={isOpen}
+              aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+            >
+              <span className={`text-2xl transition-transform duration-300 ${isOpen ? "hidden" : ""}`}>☰</span>
+              <span className={`text-2xl transition-transform duration-300 ${isOpen ? "" : "hidden"}`}>×</span>
+            </button>
+          </div>
+
+         
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                initial={{ scaleY: 0, opacity: 0 }}
+                animate={{ scaleY: 1, opacity: 1 }}
+                exit={{ scaleY: 0, opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="fixed inset-0 bg-white/90 backdrop-blur-md flex items-center justify-center origin-top"
+              >
+               
+                <button
+                  onClick={handleMenuClick}
+                  className="absolute top-6 right-6 text-5xl text-gray-900 hover:text-gray-600"
+                >
+                  ×
+                </button>
+
+               
+                <motion.nav
+                  initial="hidden"
+                  animate="visible"
+                  exit="hidden"
+                  variants={{
+                    visible: { transition: { staggerChildren: 0.2 } },
+                    hidden: {}
+                  }}
+                  className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 md:gap-14 text-3xl md:text-4xl font-bold text-gray-900"
+                >
+                  {[
+                    { name: "Sobre nosotros", href: "#AboutSection" },
+                    { name: "Servicios", href: "#Services" },
+                    { name: "Comentarios", href: "#comentarios" },
+                    { name: "Equipo", href: "#teamraffle" },
+                    { name: "Contacto", href: "#Contact" }
+                  ].map(({ name, href }) => (
+                    <motion.a
+                      key={name}
+                      href={href}
+                      onClick={() => setIsOpen(false)} // Cierra el menú después del clic
+                      className="cursor-pointer hover:text-primary transition-colors duration-200"
+                      variants={{
+                        hidden: { opacity: 0, y: -20 },
+                        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+                      }}
+                    >
+                      {name}
+                    </motion.a>
+                  ))}
+                </motion.nav>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
-        </div>
-           <dl style={{marginTop:'500px', padding:'20px'}} className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-             <div className="flex flex-col-reverse gap-1">
-               <dt className="text-base text-gray-300">Destaca nuestra base sólida de 12 colaboradores full-time, garantizando una atención profesional constante a nuestros usuarios.</dt>
-               <dd className="text-4xl font-semibold tracking-tight text-white">
-                 Equipo
-               </dd>
-             </div>
-             <div className="flex flex-col-reverse gap-1">
-               <dt className="text-base text-gray-300">
-               Con más de 300 horas semanales dedicadas, podemos manejar un volumen significativo de rifas y transacciones simultáneas.
-               </dt>
-               <dd className="text-4xl font-semibold tracking-tight text-white">
-               Tiempo
-               </dd>
-             </div>
-             <div className="flex flex-col-reverse gap-1">
-               <dt className="text-base text-gray-300">Esto nos permite mantener un equipo motivado y enfocado en brindar la mejor experiencia posible a nuestros participantes.
-</dt>
-               <dd className="text-4xl font-semibold tracking-tight text-white">
-               Beneficios
-               </dd>
-             </div>
-           </dl>
-       </div>
-     </div>
+      </div>
     </div>
-}
+  );
+};

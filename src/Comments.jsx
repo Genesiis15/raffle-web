@@ -11,12 +11,7 @@ export const Comments = () => {
         Comentarios sobre Raffle
       </h1>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          gap: "20px",
-          alignItems: "center",
-        }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
@@ -44,10 +39,7 @@ export const Comments = () => {
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  <p
-                    className="mt-5 line-clamp-3 text-sm/6 text-white"
-                    style={{ marginTop: 10 }}
-                  >
+                  <p className="mt-5 line-clamp-3 text-sm/6 text-white">
                     ¡Absolutamente increíble! El sistema de raffles online es
                     super intuitivo y profesional. Me encanta cómo se realizan
                     los sorteos en vivo y la transparencia en todo el proceso.
@@ -58,6 +50,7 @@ export const Comments = () => {
             </div>
           </div>
         </div>
+        
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
           className="bg-primary py-24 sm:py-32"
@@ -84,10 +77,7 @@ export const Comments = () => {
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  <p
-                    className="mt-5 line-clamp-3 text-sm/6 text-white"
-                    style={{ marginTop: 10 }}
-                  >
+                  <p className="mt-5 line-clamp-3 text-sm/6 text-white">
                     ¡Experiencia excepcional! La plataforma de raffles demuestra
                     un nivel de excelencia impresionante. Los sorteos en directo
                     son emocionantes y la claridad del proceso es impecable.
@@ -98,6 +88,7 @@ export const Comments = () => {
             </div>
           </div>
         </div>
+        
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
           className="bg-primary py-24 sm:py-32"
@@ -124,10 +115,7 @@ export const Comments = () => {
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  <p
-                    className="mt-5 line-clamp-3 text-sm/6 text-white"
-                    style={{ marginTop: 10 }}
-                  >
+                  <p className="mt-5 line-clamp-3 text-sm/6 text-white">
                     ¡Sorprendentemente efectivo! He participado en varios
                     sorteos y la organización ha sido perfecta. La transparencia
                     total y los sorteos en vivo hacen que sea una experiencia
@@ -138,15 +126,7 @@ export const Comments = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          gap: "20px",
-          alignItems: "center",
-        }}
-      >
+        
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
           className="bg-primary py-24 sm:py-32"
@@ -173,10 +153,7 @@ export const Comments = () => {
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  <p
-                    className="mt-5 line-clamp-3 text-sm/6 text-white"
-                    style={{ marginTop: 10 }}
-                  >
+                  <p className="mt-5 line-clamp-3 text-sm/6 text-white">
                     ¡Una maravilla! La interfaz es muy amigable y los sorteos en
                     tiempo real son increíbles. Todo está muy bien estructurado
                     y puedes seguir cada paso del proceso. ¡Totalmente
@@ -187,6 +164,7 @@ export const Comments = () => {
             </div>
           </div>
         </div>
+        
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
           className="bg-primary py-24 sm:py-32"
@@ -213,10 +191,7 @@ export const Comments = () => {
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  <p
-                    className="mt-5 line-clamp-3 text-sm/6 text-white"
-                    style={{ marginTop: 10 }}
-                  >
+                  <p className="mt-5 line-clamp-3 text-sm/6 text-white">
                     ¡Impresionante calidad! La profesionalidad con la que
                     manejan los sorteos es admirable. Los sorteos en vivo son
                     emocionantes y puedes ver absolutamente todo lo que sucede.
@@ -227,6 +202,7 @@ export const Comments = () => {
             </div>
           </div>
         </div>
+        
         <div
           style={{ padding: "10px 20px", borderRadius: "8px" }}
           className="bg-primary py-24 sm:py-32"
@@ -253,10 +229,7 @@ export const Comments = () => {
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none ">
               <article className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  <p
-                    className="mt-5 line-clamp-3 text-sm/6 text-white"
-                    style={{ marginTop: 10 }}
-                  >
+                  <p className="mt-5 line-clamp-3 text-sm/6 text-white">
                     ¡Verdaderamente innovador! La combinación de tecnología
                     moderna con procesos transparentes hace que esta plataforma
                     destaque por encima del resto. Los sorteos en directo son

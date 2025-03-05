@@ -1,6 +1,6 @@
-import { Instagram } from 'lucide-react';
-import { Facebook } from 'lucide-react';
-import { Twitter } from 'lucide-react';
+import { TbWorldShare } from "react-icons/tb";
+import { AiOutlineTikTok } from "react-icons/ai";
+import { FaInstagram } from "react-icons/fa";
 
 export const NetworkIcons =()=>{
 return <>
@@ -19,6 +19,7 @@ return <>
     >
       {/* Iconos de redes sociales */}
       <a
+      target='_blank'
         href="https://www.instagram.com/raffle.ve/"
         style={{
           color: "#FF7835",
@@ -40,11 +41,14 @@ return <>
           },
         }}
       >
-        <Instagram />
+        <FaInstagram />
       </a>
   
+      
+  
       <a
-        href="https://facebook.com/tu-usuario"
+      target='_blank'
+        href="https://www.tiktok.com/@raffleofficial?_t=ZM-8tst0IaW8I9&_r=1"
         style={{
           color: "#FF7835",
           fontSize: "24px",
@@ -65,11 +69,11 @@ return <>
           },
         }}
       >
-        <Facebook />
+         <AiOutlineTikTok />
       </a>
-  
       <a
-        href="https://instagram.com/tu-usuario"
+        target='_blank'
+        href="https://raffleofficial.com"
         style={{
           color: "#FF7835",
           fontSize: "24px",
@@ -90,7 +94,7 @@ return <>
           },
         }}
       >
-         <Twitter />
+        <TbWorldShare />
       </a>
     </div>
 </>

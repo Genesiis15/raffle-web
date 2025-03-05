@@ -1,6 +1,8 @@
 import mariangel from '../src/assets/mariangel.jpg'
 import genesis from '../src/assets/genesis.jpg'
 import maikol from '../src/assets/maikol.jpg'
+import diango from '../src/assets/diango.jpg'
+import jean from '../src/assets/jean.png'
 
 export const TeamRaffle =()=>{
     return <>
@@ -44,7 +46,7 @@ src={maikol}                    alt=""
                 <div className="flex items-center gap-x-6 bg-white/90 p-8 rounded-lg shadow-lg" style={{padding:'20px'}}>
                   <img
                     className="size-16 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    src={jean}
                     alt=""
                   />
                   <div>
@@ -95,7 +97,7 @@ src={maikol}                    alt=""
                 <div className="flex items-center gap-x-6 bg-white/90 p-8 rounded-lg shadow-lg" style={{padding:'20px'}}>
                   <img
                     className="size-16 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    src={diango}
                     alt=""
                   />
                   <div>
